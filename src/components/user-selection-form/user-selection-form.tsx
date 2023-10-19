@@ -1,4 +1,4 @@
-import { USERS } from '@/app/lib/theme-by-user';
+import { USERS } from '@/lib/theme-by-user';
 import { userSelectionFormAction } from './user-selection-server-action';
 
 export function UserSelectionForm() {

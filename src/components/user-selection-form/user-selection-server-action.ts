@@ -1,8 +1,7 @@
 'use server';
 
-import { USER_COOKIE } from '@/app/constants/user-cookie';
-import { USERS } from '@/app/lib/theme-by-user';
-import { revalidatePath } from 'next/cache';
+import { USER_COOKIE } from '@/constants/user-cookie';
+import { USERS } from '@/lib/theme-by-user';
 import { cookies } from 'next/headers';
 
 export async function userSelectionFormAction(formData: FormData) {
@@ -21,6 +20,4 @@ export async function userSelectionFormAction(formData: FormData) {
   const cookieJar = cookies();
 
   cookieJar.set(USER_COOKIE, user);
-
-  revalidatePath('*');
 }

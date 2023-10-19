@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { UserSelectionForm } from './components/user-selection-form/user-selection-form'
+import { UserSelectionForm } from '@/components/user-selection-form'
 
 export default function Home() {
   return (
